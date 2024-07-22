@@ -22,10 +22,6 @@ output "ec2_instance_id" {
   value = module.ec2.instance_id
 }
 
-output "iam_role_name" {
-  value = module.iam.role_name
-}
-
 output "bucket_id" {
   value = module.s3.bucket_id
 }
