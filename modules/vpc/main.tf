@@ -31,8 +31,8 @@ resource "aws_route_table" "public" {
   }
 }
 
-// Associate the public route table with the private subnet
-resource "aws_route_table_association" "private" {
+// Associate the public route table with the Public subnet
+resource "aws_route_table_association" "Public" {
   subnet_id      = aws_subnet.public_subnet.id
   route_table_id = aws_route_table.public.id
 }
