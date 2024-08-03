@@ -1,6 +1,6 @@
 resource "aws_db_instance" "db_instance" {
   identifier            = var.db_instance_identifier
-  allocated_storage     = 10  # GB
+  allocated_storage     = 20  # GB
   storage_type          = "gp2"
   engine                = "postgres"
   engine_version        = "12.4"
