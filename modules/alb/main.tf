@@ -22,7 +22,7 @@ resource "aws_lb_listener" "http" {
   }
 }
 
-# a target group for ALB to EC2 instances
+# target group for ALB to EC2 instances
 resource "aws_lb_target_group" "alb_target_group" {
   name     = "my-target-group"
   port     = 80
